@@ -31,11 +31,14 @@ nav h3 {
   margin: 0;
 }
 
-nav a:hover{
-  color: blue;
+nav a {
+  text-decoration: none;
+  color: black;
 }
 
-
+nav a:hover {
+  color: blue;
+}
 
 nav ul {
   display: flex;
@@ -45,9 +48,9 @@ nav ul {
   margin: 0;
 }
 
-nav a {
-  text-decoration: none;
-  color: black;
+nav li {
+  display: flex;
+  gap: 15px;
 }
 
 button {
