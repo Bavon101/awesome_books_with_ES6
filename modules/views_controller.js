@@ -47,7 +47,7 @@ const createBookElements = () => {
     noBooks.appendChild(noBooksText);
     booksSection.appendChild(noBooks);
   }
-}
+};
 
 const getAddedBook = () => {
   const title = document.getElementById('title').value;
@@ -55,7 +55,7 @@ const getAddedBook = () => {
   books.addBook(title, author);
   createBookElements();
   form.reset();
-}
+};
 
 const initStorage = () => {
   if (localStorage.getItem('books')) {
@@ -64,7 +64,7 @@ const initStorage = () => {
   } else {
     createBookElements();
   }
-}
+};
 
 const deactivateActivity = (id) => {
   const menus = [listTag, newTag, contactTag];
@@ -74,7 +74,7 @@ const deactivateActivity = (id) => {
     }
     return m;
   });
-}
+};
 
 const showAndHide = (id) => {
   const formSection = document.getElementById('form_section');
@@ -92,7 +92,7 @@ const showAndHide = (id) => {
     }
     return s;
   });
-}
+};
 
 const updateView = (id) => {
   if (id === listTag.id) {
@@ -114,12 +114,12 @@ const updateView = (id) => {
     deactivateActivity(id);
     showAndHide('contact');
   }
-}
+};
 
 const createDate = () => {
   const d = DateTime.now();
   document.getElementById('time').innerHTML = d;
-}
+};
 
 const initAll = () => {
   initStorage();
@@ -128,6 +128,6 @@ const initAll = () => {
   newTag.addEventListener('click', () => { updateView(newTag.id); });
   contactTag.addEventListener('click', () => { updateView(contactTag.id); });
   createDate();
-}
+};
 
 export default initAll;
