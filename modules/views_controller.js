@@ -121,12 +121,11 @@ function createDate() {
   document.getElementById('time').innerHTML = d;
 }
 
-function initAll() {
+export function initAll() {
   initStorage();
   form.addEventListener('submit', getAddedBook);
-  listTag.addEventListener('click', () => { updateView(listTag.id) });
-  newTag.addEventListener('click', () => { updateView(newTag.id) });
-  contactTag.addEventListener('click', () => { updateView(contactTag.id) });
+  listTag.addEventListener('click', () => { updateView(listTag.id); });
+  newTag.addEventListener('click', () => { updateView(newTag.id); });
+  contactTag.addEventListener('click', () => { updateView(contactTag.id); });
   createDate();
 }
-export {initAll};

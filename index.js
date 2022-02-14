@@ -1,3 +1,3 @@
-import * as controller from './modules/views_controller.js';
+import { initAll as init} from './modules/views_controller.js';
 
-controller.initAll();
+init();
