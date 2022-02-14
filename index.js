@@ -1,3 +1,3 @@
-import { initAll as init} from './modules/views_controller.js';
+import init from './modules/views_controller.js';
 
 init();

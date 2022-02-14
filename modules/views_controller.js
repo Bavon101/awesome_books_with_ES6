@@ -121,7 +121,7 @@ function createDate() {
   document.getElementById('time').innerHTML = d;
 }
 
-export function initAll() {
+function initAll() {
   initStorage();
   form.addEventListener('submit', getAddedBook);
   listTag.addEventListener('click', () => { updateView(listTag.id); });
@@ -129,3 +129,5 @@ export function initAll() {
   contactTag.addEventListener('click', () => { updateView(contactTag.id); });
   createDate();
 }
+
+export default initAll;
