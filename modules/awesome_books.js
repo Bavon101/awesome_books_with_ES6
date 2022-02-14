@@ -1,5 +1,6 @@
 export default class AwesomeBooks {
   books = [];
+	
   saveBooks() {
     const booksList = JSON.stringify(this.books);
     localStorage.setItem('books', booksList);
@@ -16,8 +17,8 @@ export default class AwesomeBooks {
   }
 
   removeBook(id) {
-   this.books = this.books.filter((a) => a.id !== id);
-   this.saveBooks();
+    this.books = this.books.filter((a) => a.id !== id);
+    this.saveBooks();
   }
 
   getStoredBooks() {
