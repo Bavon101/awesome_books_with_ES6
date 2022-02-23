@@ -1,5 +1,5 @@
 import AwesomeBooks from './awesome_books.js';
-import { DateTime } from '../node_modules/luxon/src/luxon.js';
+import { DateTime } from 'luxon/src/luxon';
 
 const books = new AwesomeBooks();
 const booksSection = document.getElementById('books');
