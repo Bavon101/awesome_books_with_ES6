@@ -8,6 +8,8 @@
 <!-- ## You can access the live portfolio [here](https://bavon101.github.io/my_portfolio/#About) -->
 
 Additional description about the project and its features.
+
+ The simple webpage acts as an online library for authors, with the primary functions of being able to add a back, save it locally via `localeStorage`, `delete` the book and `view` added.
 ## Screenshots Desktop 📷
 
 
